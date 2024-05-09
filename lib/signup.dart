@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:interim_fyp/login.dart';
+import 'package:interim_fyp/Faceauthentication.dart';
 
 class signup extends StatefulWidget {
   static const String id='signup';
@@ -98,14 +98,14 @@ class _signupState extends State<signup> {
                                   height: 40,
                                   child: ElevatedButton(
                                     onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => login()
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => faceauthentication()
                                       ));
                                     },
                                     style: ElevatedButton.styleFrom(
                                       primary: Color(0xff4c505b), // Background color
                                     ),
                                     child: Text(
-                                      'Sign Up',
+                                      'Authentication',
                                       style: TextStyle(
                                         color: Colors.white, // Text color
                                       ),

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:interim_fyp/login.dart';
+import 'package:interim_fyp/profile.dart';
 import 'package:interim_fyp/splash_screen.dart';
 import 'package:interim_fyp/signup.dart';
+import 'package:interim_fyp/profile.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +20,9 @@ class MyApp extends StatelessWidget {
       routes: {
         splash_screen.id:(context)=>splash_screen(),
         login.id:(context)=>login(),
-        signup.id:(context)=>signup(),//dusra wala class ka name hota hai
+        signup.id:(context)=>signup(),
+        profile.id:(context)=>profile(),
+        //dusra wala class ka name hota hai
       },
     );
   }

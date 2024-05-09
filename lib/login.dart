@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:interim_fyp/profile.dart';
 import 'package:interim_fyp/signup.dart';
 
 class login extends StatefulWidget {
@@ -38,7 +39,7 @@ class _loginState extends State<login> {
                             decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
-                                hintText: "Email",
+                                hintText: "Enter Username",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -52,7 +53,7 @@ class _loginState extends State<login> {
                             decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
-                                hintText: "Password",
+                                hintText: "Enter Password",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -69,7 +70,7 @@ class _loginState extends State<login> {
                                   height: 40,
                                   child: ElevatedButton(
                                     onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => signup()
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => profile()
                                       ));
                                     },
                                     style: ElevatedButton.styleFrom(
